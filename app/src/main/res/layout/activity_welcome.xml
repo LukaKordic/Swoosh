@@ -10,6 +10,7 @@
         android:id="@+id/welcomeBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/background_image"
         android:scaleType="centerCrop"
         android:src="@drawable/welcomescreenbg"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:contentDescription="@string/swoosh_logo_content"
         android:scaleType="fitCenter"
         android:src="@drawable/swooshlogo"
         android:textAlignment="center"
@@ -69,14 +71,12 @@
         android:id="@+id/getStarted"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:background="@drawable/swoosh_button"
         android:text="@string/get_started_btn_text"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

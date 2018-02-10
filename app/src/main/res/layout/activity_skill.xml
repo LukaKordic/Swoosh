@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/desiredleaguebg"
-    tools:context="com.example.lkord.swoosh.LeagueActivity">
+    android:background="@drawable/beginnerballerbg"
+    tools:context="com.example.lkord.swoosh.SkillActivity">
 
     <ImageView
         android:id="@+id/swooshLogo"
@@ -21,11 +21,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/desired_league"
+        android:id="@+id/skillLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/desired_league"
+        android:text="@string/i_m_a"
         android:textColor="@color/colorAccent"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,59 +33,41 @@
         app:layout_constraintTop_toBottomOf="@id/swooshLogo" />
 
     <ToggleButton
-        android:id="@+id/menLeague"
-        android:layout_width="0dp"
+        android:id="@+id/beginner"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
         android:background="@drawable/swoosh_toggle"
         android:textColor="@color/colorAccent"
-        android:textOff="@string/men"
-        android:textOn="@string/men"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textOff="@string/beginner"
+        android:textOn="@string/beginner"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/desired_league" />
+        app:layout_constraintTop_toBottomOf="@id/skillLevel" />
 
     <ToggleButton
-        android:id="@+id/womenLeague"
-        android:layout_width="0dp"
+        android:id="@+id/baller"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/swoosh_toggle"
         android:textColor="@color/colorAccent"
-        android:textOff="@string/women"
-        android:textOn="@string/women"
+        android:textOff="@string/baller"
+        android:textOn="@string/baller"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menLeague" />
-
-    <ToggleButton
-        android:id="@+id/coedLeague"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/swoosh_toggle"
-        android:textColor="@color/colorAccent"
-        android:textOff="@string/coed"
-        android:textOn="@string/coed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/womenLeague" />
+        app:layout_constraintStart_toEndOf="@id/beginner"
+        app:layout_constraintTop_toBottomOf="@id/skillLevel" />
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/findGame"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/swoosh_button"
-        android:text="@string/next"
+        android:text="@string/find_game"
         android:textColor="@color/colorAccent"
-        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

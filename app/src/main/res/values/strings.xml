@@ -9,4 +9,10 @@
     <string name="women">WOMEN</string>
     <string name="coed">CO-ED</string>
     <string name="next">NEXT</string>
+    <string name="swoosh_logo_content">swooshLogo</string>
+    <string name="background_image">background image</string>
+    <string name="i_m_a">I\'m a:</string>
+    <string name="beginner">BEGINNER</string>
+    <string name="baller">BALLER</string>
+    <string name="find_game">Find game</string>
 </resources>
