@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/desiredleaguebg"
-    tools:context="com.example.lkord.swoosh.LeagueActivity">
+    tools:context="com.example.lkord.swoosh.ui.LeagueActivity">
 
     <ImageView
         android:id="@+id/swooshLogo"
