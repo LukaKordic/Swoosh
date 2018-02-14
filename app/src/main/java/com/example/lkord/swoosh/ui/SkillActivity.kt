@@ -28,17 +28,17 @@ class SkillActivity : AppCompatActivity() {
         setContentView(R.layout.activity_skill)
         player = intent.getSerializableExtra(PLAYER_EXTRA) as Player
 
-        beginner.setOnClickListener {
+        beginner.onClick {
             baller.isChecked = false
             player.skill = beginner.textOn as String
         }
 
-        baller.setOnClickListener {
+        baller.onClick {
             beginner.isChecked = false
             player.skill = baller.textOn as String
         }
 
-        findGame.setOnClickListener {
+        findGame.onClick {
             if (player.skill != "") {
                 startActivity(FinishActivity.getLaunchIntent(this).putExtra(PLAYER_EXTRA, player))
             } else {

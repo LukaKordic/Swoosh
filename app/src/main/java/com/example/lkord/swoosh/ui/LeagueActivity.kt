@@ -27,26 +27,26 @@ class LeagueActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_league)
 
-        menLeague.setOnClickListener {
+        menLeague.onClick {
             womenLeague.isChecked = false
             coedLeague.isChecked = false
             player.league = menLeague.text as String
         }
 
-        womenLeague.setOnClickListener {
+        womenLeague.onClick {
             menLeague.isChecked = false
             coedLeague.isChecked = false
             player.league = womenLeague.text as String
         }
 
 
-        coedLeague.setOnClickListener {
+        coedLeague.onClick {
             menLeague.isChecked = false
             womenLeague.isChecked = false
             player.league = coedLeague.text as String
         }
 
-        next.setOnClickListener {
+        next.onClick {
             if (player.league != "") {
                 startActivity(SkillActivity.getLaunchIntent(this).putExtra(PLAYER_EXTRA, player))
             } else {
